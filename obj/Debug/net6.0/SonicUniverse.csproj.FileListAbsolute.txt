@@ -1,0 +1,15 @@
+E:\SonicUniverse\bin\Debug\net6.0\SonicUniverse.exe
+E:\SonicUniverse\bin\Debug\net6.0\SonicUniverse.deps.json
+E:\SonicUniverse\bin\Debug\net6.0\SonicUniverse.runtimeconfig.json
+E:\SonicUniverse\bin\Debug\net6.0\SonicUniverse.dll
+E:\SonicUniverse\bin\Debug\net6.0\ref\SonicUniverse.dll
+E:\SonicUniverse\bin\Debug\net6.0\SonicUniverse.pdb
+E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.csproj.AssemblyReference.cache
+E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.GeneratedMSBuildEditorConfig.editorconfig
+E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.AssemblyInfoInputs.cache
+E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.AssemblyInfo.cs
+E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.csproj.CoreCompileInputs.cache
+E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.dll
+E:\SonicUniverse\obj\Debug\net6.0\ref\SonicUniverse.dll
+E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.pdb
+E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.genruntimeconfig.cache
