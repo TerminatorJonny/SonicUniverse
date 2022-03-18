@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SonicUniverse.Entities;
+using SonicUniverse.Entities.Repositories;
+using System;
 
 namespace SonicUniverse
 {
@@ -6,7 +8,13 @@ namespace SonicUniverse
     {
         public static void Main(string[] args)
         {
-            System.Console.WriteLine("Hello Sonic lover");
+            var charactersRepository = new CharactersRepositories();
+            charactersRepository.Add(new Characters { FirstName = "Sonic" });
+            charactersRepository.Add(new Characters { FirstName = "Tails" });
+            charactersRepository.Add(new Characters { FirstName = "Knuckles" });
+            charactersRepository.Save();
+
+            Console.ReadLine();
         }
     }
 }
