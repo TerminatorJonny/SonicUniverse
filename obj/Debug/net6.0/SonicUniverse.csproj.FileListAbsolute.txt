@@ -13,3 +13,15 @@ E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.dll
 E:\SonicUniverse\obj\Debug\net6.0\ref\SonicUniverse.dll
 E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.pdb
 E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.genruntimeconfig.cache
+E:\SonicUniverse\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\SonicUniverse\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\SonicUniverse\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+E:\SonicUniverse\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\SonicUniverse\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\SonicUniverse\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\SonicUniverse\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\SonicUniverse\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+E:\SonicUniverse\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\SonicUniverse\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+E:\SonicUniverse\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+E:\SonicUniverse\obj\Debug\net6.0\SonicUniverse.csproj.CopyComplete

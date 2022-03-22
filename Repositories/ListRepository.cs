@@ -1,12 +1,13 @@
-using System;
-using System.Collections.Generic;
-
-
 namespace SonicUniverse.Entities.Repositories
 {
-    public class GenericRepository<T> where T : EntityBase
+    public class ListRepository<T> : IRepository<T> where T : IEntity
     {
         private readonly List<T> _items = new();
+
+        public IEnumerable<T> GetAll()
+        {
+            return _items.ToList();
+        }
 
         public T GetById(int id)
         {
@@ -27,10 +28,7 @@ namespace SonicUniverse.Entities.Repositories
 
         public void Save()
         {
-            foreach (var item in _items)
-            {
-                Console.WriteLine(item);
-            }
+            // Everything is saved already in the List<T>
         }
     }
 }
