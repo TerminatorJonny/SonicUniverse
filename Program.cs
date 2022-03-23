@@ -1,7 +1,7 @@
 ﻿using SonicUniverse.Data;
 using SonicUniverse.Entities;
 using SonicUniverse.Entities.Repositories;
-using System;
+using SonicUniverse.Repositories;
 
 namespace SonicUniverse
 {
@@ -24,7 +24,16 @@ namespace SonicUniverse
 
         private static void AddManagers(IWriteRepository<Manager> ManagerRepository)
         {
-            ManagerRepository.Add(new Manager { FirstName = "Sara" });
+            var saraManager = new Manager { FirstName = "Sara" };
+            var saraManagerCopy = saraManager.Copy();
+            ManagerRepository.Add(saraManager);
+
+            if (saraManagerCopy is not null)
+            {
+                saraManagerCopy.FirstName += "_Copy";
+                ManagerRepository.Add(saraManagerCopy);
+            }
+
             ManagerRepository.Add(new Manager { FirstName = "Henry" });
             ManagerRepository.Save();
         }
@@ -46,17 +55,23 @@ namespace SonicUniverse
 
         private static void AddCharacters(IRepository<Characters> charactersRepository)
         {
-            charactersRepository.Add(new Characters { FirstName = "Sonic" });
-            charactersRepository.Add(new Characters { FirstName = "Tails" });
-            charactersRepository.Add(new Characters { FirstName = "Knuckles" });
-            charactersRepository.Save();
+            var characters = new[]
+            {
+            new Characters { FirstName = "Sonic" },
+            new Characters { FirstName = "Tails" },
+            new Characters { FirstName = "Knuckles" }
+            };
+            charactersRepository.AddBatch(characters);
         }
 
         private static void AddOrganizations(IRepository<Organization> organizationRepository)
         {
-            organizationRepository.Add(new Organization { Name = "Pluralsight" });
-            organizationRepository.Add(new Organization { Name = "Globomantics" });
-            organizationRepository.Save();
+            var organizations = new[]
+            {
+                new Organization { Name = "Pluralsight" },
+                new Organization { Name = "Globomantics" }
+            };
+            organizationRepository.AddBatch(organizations);
         }
     }
 }
