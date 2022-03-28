@@ -9,7 +9,8 @@ namespace SonicUniverse
     {
         public static void Main(string[] args)
         {
-            var charactersRepository = new SqlRepository<Characters>(new StorageAppDbContext(), CharacterAdded);
+            var charactersRepository = new SqlRepository<Characters>(new StorageAppDbContext());
+            charactersRepository.ItemAdded += CharactersRepository_ItemAdded;
 
             AddCharacters(charactersRepository);
             AddManagers(charactersRepository);
@@ -23,9 +24,9 @@ namespace SonicUniverse
             Console.ReadLine();
         }
 
-        private static void CharacterAdded(Characters character)
+        private static void CharactersRepository_ItemAdded(object? sender, Characters e)
         {
-            Console.WriteLine($"Character added => {character.FirstName}");
+            Console.WriteLine($"Character added => {e.FirstName}");
         }
 
         private static void AddManagers(IWriteRepository<Manager> ManagerRepository)
